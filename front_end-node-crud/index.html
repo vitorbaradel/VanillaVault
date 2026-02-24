@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="src/css/index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+   <title>Cadastro</title>
+</head>
+<body>
+   <dialog id="modal-choose-name">
+      <form>
+         <div class="header-modal">
+            <i id="close-modal" class="fa-solid fa-xmark"></i>
+            <h2>Tem certeza de que não quer registrar um nome?</h2>
+         </div>
+         <div class="content-modal">
+            <p>
+               Caso não defina, seu nome de usuário será guardado como o primeiro nome do email fornecido
+            </p>
+            <h3>Podemos definir?</h3>
+         </div>
+         <div class="choose-modal">
+            <button type="button" id="button-choose-yes"> Sim </button>
+            <button type="button" id="button-choose-not"> Não </button>
+         </div>
+      </form>
+   </dialog>
+   <div class="container">
+
+      <div class='img-cadastro'>
+         <img src="src/assets/undraw_my-password_iyga.svg" alt="Imagem">
+      </div>
+
+      <div class="form-cadastro">
+         <form>
+            <div class="form-header">
+                  <h1>Cadastro</h1>
+            <div class="login-button">
+               <p>Já tem cadastro?</p>
+               <button type="button"><a href="./src/pages/login.html">Login</a></button>
+            </div>
+
+            </div>
+
+            <div class="form-content">
+               <label for="name">
+                  Nome
+               </label>
+               <input 
+                  id="name" 
+                  type="text"
+                  placeholder="Digite seu primeiro nome"
+               >
+
+               <label for="email">
+                  E-mail
+               </label>
+               <input 
+                  id="email" 
+                  type="email" required
+                  placeholder="Digite seu e-mail"
+               >
+
+               <label for="password">
+                  Senha
+               </label>
+               <input 
+                  id="password" 
+                  type="password" required
+                  placeholder="Digite sua senha"
+               >
+            </div>
+            <div class="register-button">
+               <button id="register-button" type="button">
+                  Cadastre-se
+               </button>
+            </div>
+            
+         </form>
+      </div>
+
+   </div>
+
+   <script type="module" src="src/services/register.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

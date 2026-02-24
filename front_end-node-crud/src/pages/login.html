@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> 
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/login.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+   <title>Login</title>
+</head>
+<body>
+   <dialog id="modal-choose-login">
+      <form>
+         <div class="header-modal">
+            <h2>Já existe uma sessão aberta nesse dispositivo, gostaria de continuar nela?</h2>
+         </div>
+         <div class="choose-modal">
+            <button type="button" id="button-choose-yes"> Sim </button>
+            <button type="button" id="button-choose-not"> Não </button>
+         </div>
+      </form>
+   </dialog>
+   <div class="container">
+
+      <div class='img-cadastro'>
+         <img src="../assets/undraw_my-password_iyga.svg" alt="Imagem">
+      </div>
+
+      <div class="form-cadastro">
+         <form>
+            <div class="form-header">
+                  <h1>Login</h1>
+            <div class="login-button">
+               <p>Não tem cadastro?</p>
+               <button type="button"><a href="../../index.html">Cadastre-se</a></button>
+            </div>
+
+            </div>
+
+            <div class="form-content">
+               <label for="email">
+                  E-mail
+               </label>
+               <input 
+                  id="email" 
+                  type="email" required
+                  placeholder="Digite seu e-mail"
+               >
+
+               <label for="password">
+                  Senha
+               </label>
+               <input 
+                  id="password" 
+                  type="password" required
+                  placeholder="Digite sua senha"
+               >
+               <div class="remember-password">
+                  <div class="remember-title">
+                     <p>
+                        Esqueceu a senha?
+                     </p>
+                  </div>
+                  <div class="remember-link">
+                     <a href="#">Recupere aqui</a>
+                  </div>
+               </div>
+            </div>
+            <div class="register-button">
+               <button id="login-button" type="button">
+                  Login
+               </button>
+            </div>
+            
+         </form>
+      </div>
+   </div>
+
+   <script type="module" src="../services/login.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

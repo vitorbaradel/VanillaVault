@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*:not(dialog) {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Funnel Sans", sans-serif;
+}
+
+dialog::backdrop {
+   background-color: rgb(0, 0, 0, 0.5);
+}
+
+dialog {
+   border: none;
+   width: min(90%, 400px);
+   border-radius: 24px;
+   padding: 18px;
+   overflow: hidden;
+}
+
+.header-modal {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   margin-bottom: 17px;
+}
+
+.header-modal i {
+   cursor: pointer;
+   transition: all 200ms;
+}
+
+.header-modal i:hover {
+   transform: scale(1.1);
+}
+
+.header-modal h2 {
+   color: #222;
+   font-weight: 400;
+   font-size: 25px;
+}
+
+.content-modal {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 10px;
+}
+
+.content-modal h3 {
+   font-weight: 400;
+   color: #222;
+   margin-top: 17px;
+}
+
+.content-modal p {
+   color: #444
+}
+
+.choose-modal {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.choose-modal #button-choose-yes {
+   padding: 4px 18px;
+   font-size: 20px;
+   border-radius: 20px;
+   background-color: rgb(190, 250, 190);
+   border: 1px solid rgb(0, 255, 0);
+   cursor: pointer;
+   transition: all 170ms;
+}
+
+.choose-modal #button-choose-yes:hover {
+   transform: scale(1.1);
+}
+
+
+.choose-modal #button-choose-not {
+   padding: 4px 18px;
+   font-size: 20px;
+   border-radius: 20px;
+   background-color: rgb(251, 188, 186);
+   border: 1px solid rgb(255, 0, 0) ;
+   cursor: pointer;
+   transition: all 170ms;
+}
+
+.choose-modal #button-choose-not:hover {
+   transform: scale(1.1);
+}
+
+body {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(227, 238, 238);
+}
+
+.container {
+   width: 90%;
+   height: 90vh;
+   display: flex;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+   border-radius: 20px;
+   background-color: azure;
+}
+
+
+.img-cadastro {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(255, 248, 239);
+   border-radius: 20px;
+}
+
+.form-cadastro {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 8px 20px;
+   gap:15px;
+}
+
+.form-header {
+   margin-bottom: 3rem;
+   display: flex;
+   justify-content: space-between;
+   gap: 60px;
+}
+
+.form-header h1 {
+   font-size: 45px;
+}
+
+.form-header h1::after {
+   content: '';
+   display: block;
+   width: 9rem;
+   height: 0.3rem;
+   background-color: rgb(247, 183, 64);
+   margin: 0 auto;
+   position: absolute;
+   border-radius: 10px;
+}
+
+.login-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+ 
+.login-button p {
+   color: #444;
+   font-size: 15px;
+}
+
+.login-button button {
+   margin-top: 6px;
+   border: none;
+   padding: 6px 14px;
+   border-radius: 26px;
+   transition: all 0.5s;
+   cursor: pointer;
+   background-color: rgb(250, 229, 190);
+   border: 1px solid rgb(255, 166, 0) ;
+}
+
+.login-button button:hover {
+   box-shadow: 2px 2px 2px rgba(2,2,2, .210);
+}
+
+
+.login-button button a {
+   text-decoration: none;
+   font-weight: 600;
+   color: #000;
+   font-size: 18px;
+}
+
+.form-content {
+   display: flex;
+   flex-direction: column;
+   gap:15px;
+}
+
+.form-content input {
+   outline: none;
+   padding: 12px 12px;
+   border: none;
+   border-radius: 16px;
+   box-shadow: 1px 1px 6px #0000001c;
+   transition: all 0.2;
+}
+
+.form-content input:focus {
+   outline-width: 3px;
+   outline: auto;
+   outline-color: rgb(255, 202, 104);
+}
+
+
+.remember-password {
+   display: flex;
+   justify-content: center;
+   gap: 7px;
+   margin-top: -11px;
+}
+
+.remember-title p {
+   color: #444;
+   margin-top: 5px;
+   font-size: 15px;
+}
+
+.remember-password a {
+   font-size: 15px;
+   text-decoration: none;
+   color: rgb(53, 53, 238);
+}
+
+.remember-password a:hover {
+   text-decoration:underline;
+}
+
+.register-button {
+   display: flex;
+   justify-content: center;
+   margin: 40px 5px;
+}
+
+.register-button button {
+   font-weight: 500;
+   font-size: 22px;
+   padding: 12px 30px;
+   background-color: rgb(255, 202, 104);
+   border: none;
+   border-radius: 26px;
+   border: 1px solid rgb(244, 174, 45) ;
+   cursor: pointer;
+}
+
+.register-button button:hover {
+   border: 2px solid rgb(255, 166, 0) ;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+   .container {
+      flex-direction: column;
+      height: auto;
+   }
+
+   .img-cadastro {
+      display: none;
+   }
+
+   .form-cadastro {
+      width: 100%;
+      padding: 30px 20px;
+   }
+
+   .form-header {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+   }
+
+   .form-header h1 {
+      font-size: 35px;
+   }
+
+   .login-button button a {
+      font-size: 18px;
+   }
+
+   .register-button button {
+      width: 100%;
+      font-size: 20px;
+   }
+
+   .form-content input {
+      font-size: 16px;
+   }
+
+   .remember-password {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+}

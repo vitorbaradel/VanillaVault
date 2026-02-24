@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/list-users.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+   <title>Lista de Usuários</title>
+</head>
+
+<body>
+   <div class="container">
+      <div class="manager-users">
+
+         <div class="manager-header">
+            <div class="title-manager">
+               <h1>Gerencie os Usuários</h1>
+               <i class="fa-solid fa-check fa-2x"></i>
+            </div>
+            <div class="reload-manager">
+               <p>Recarregar a página</p>
+               <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <div id="logout" class="logout-manager">
+               <h3>
+                  Sair
+               </h3>
+               <i class="fa-solid fa-right-from-bracket fa-lg"></i>
+            </div>
+         </div>
+         <div class="users-manager-box">
+            <div class="user-box"><!--Retorno da Api--></div>
+         </div>
+         <script type="module" src="../services/list-users.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
