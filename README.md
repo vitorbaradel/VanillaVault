@@ -68,7 +68,7 @@ No frameworks. No shortcuts. Just the fundamentals done right.
 ## Project Structure
 
 ```
-NodeCRUD/
+VanillaVault/
 │
 ├── backend/
 │   ├── config/                  # App setup and global middlewares
@@ -100,8 +100,8 @@ NodeCRUD/
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/ScatmanVit/NodeCRUD.git
-cd NodeCRUD
+git clone https://github.com/ScatmanVit/VanillaVault.git
+cd VanillaVault
 ```
 
 **2. Set up the backend**
