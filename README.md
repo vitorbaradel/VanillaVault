@@ -100,7 +100,7 @@ VanillaVault/
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/ScatmanVit/VanillaVault.git
+git clone https://github.com/vitorbaradel/VanillaVault.git
 cd VanillaVault
 ```
 
